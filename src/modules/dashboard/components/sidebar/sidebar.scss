@@ -1,0 +1,63 @@
+@import 'assets/styles/brand';
+.sidebar {
+  position: absolute;
+  width: var(--sidebar-width);
+  height: calc(100% - var(--header-height));
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  @keyframes slideOut {
+    0% {
+      transform: translate(0);
+    }
+    90% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translate(-200px);
+      opacity: 0;
+    }
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translate(-200px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  &--open {
+    animation: slideIn 300ms linear forwards;
+  }
+
+  &--closed {
+    animation: slideOut 300ms linear forwards;
+  }
+
+  @mixin sidebar() {
+    background-color: $brand-ash;
+  }
+  --shadow: 10px 20px 12px 6px #4444;
+
+  &__top {
+    @include sidebar();
+    margin-top: 2px;
+    height: var(--sidebar-top);
+    border-top-right-radius: var(--sidebar-top);
+    box-shadow: var(--shadow);
+  }
+  &__nav {
+    @include sidebar();
+    flex: 1;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+}
+@media screen and(max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}

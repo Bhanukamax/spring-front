@@ -1,0 +1,15 @@
+@import 'assets/styles/brand';
+
+.user-list {
+  &__users {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__department {
+    color: $brand-blue;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+
+    @include fontBold();
+  }
+}

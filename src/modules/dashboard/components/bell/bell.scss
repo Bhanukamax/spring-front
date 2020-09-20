@@ -1,0 +1,13 @@
+.notifications {
+  position: relative;
+
+  &__bell {
+    color: #fff;
+  }
+
+  &__count {
+    position: absolute;
+    top: -14px;
+    right: -8px;
+  }
+}

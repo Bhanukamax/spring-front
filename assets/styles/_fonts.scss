@@ -1,0 +1,15 @@
+@mixin fontRegular {
+  font-family: 'Roboto';
+}
+
+@mixin fontLight() {
+  font-family: 'Roboto Light';
+}
+
+@mixin fontMedium() {
+  font-family: 'Roboto Medium';
+}
+
+@mixin fontBold() {
+  font-family: 'Roboto Bold';
+}

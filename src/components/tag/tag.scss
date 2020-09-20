@@ -1,0 +1,14 @@
+@import 'assets/styles/brand';
+.tag {
+  background-color: $brand-water;
+  color: $brand-stone;
+  padding: 5px;
+  margin: 2px;
+
+  &__close-button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+}

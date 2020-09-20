@@ -1,0 +1,14 @@
+@import 'assets/styles/brand';
+
+.footer {
+  height: var(--footer-height);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 20px;
+  background-color: $brand-stone;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

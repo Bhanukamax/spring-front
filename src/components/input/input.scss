@@ -1,0 +1,54 @@
+@import 'assets/styles/brand';
+.input {
+  background-color: #fff;
+  // padding: 20px;
+
+  width: 100%;
+  margin: 1px;
+  display: flex;
+  min-height: 55px;
+  // align-items: center;
+  // padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+
+  @include rounded();
+  // border: 1px solid pink;
+
+  &--simple .input__container {
+    border-bottom: 1px solid $brand-gray;
+    border-radius: 0;
+  }
+
+  &__icon {
+    color: $brand-gray;
+  }
+
+  &__input {
+    color: $brand-gray;
+
+    padding-left: 15px;
+    flex: 1;
+    border: 0;
+    margin-left: 10px;
+    outline: none;
+    font-size: 0.9rem;
+    height: 100%;
+    @include fontBold();
+    // border: 1px solid pink;
+  }
+  &__error {
+    color: red;
+  }
+
+  &__container {
+    display: flex;
+    width: 100%;
+    margin: 1px;
+    display: flex;
+    min-height: 55px;
+    align-items: center;
+    padding-left: 15px;
+    display: flex;
+  }
+}

@@ -1,0 +1,44 @@
+@import 'assets/styles/brand';
+
+$width: 300px;
+$height: ($width/220) * 246;
+.user-card {
+  width: $width;
+  height: $height;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 8px 10px 3px #44444424;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  @include rounded();
+
+  &__header {
+    background-color: $brand-ash;
+    padding: 10px;
+    color: $brand-crow;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__delete {
+    border: 1px solid $brand-stone;
+    cursor: pointer;
+    background-color: transparent;
+
+    @include rounded();
+  }
+
+  &__body {
+    padding: 10px 30px;
+  }
+
+  &__last-name {
+    @include fontBold();
+  }
+
+  &__image {
+    border-radius: 50%;
+  }
+}

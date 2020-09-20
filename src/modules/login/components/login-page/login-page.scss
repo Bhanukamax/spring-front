@@ -1,0 +1,22 @@
+@import 'assets/styles/brand.scss';
+
+.login-page {
+  background: $brand-green;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  & > * {
+    margin: 10px 0;
+  }
+
+  &__title {
+    font-size: 2rem;
+    @include fontBold();
+  }
+  &__description {
+    font-size: 1rem;
+  }
+}

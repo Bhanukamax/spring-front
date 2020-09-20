@@ -1,0 +1,29 @@
+@import 'assets/styles/brand';
+
+.search-bar {
+  background-color: #fff;
+  padding: 10px 20px;
+  min-width: 400px;
+  display: flex;
+  @media screen and(max-width: 600px) {
+    display: none;
+  }
+
+  @include rounded();
+  &__input {
+    border: none;
+    flex: 1;
+  }
+
+  &__button {
+    background-color: $brand-green;
+    border: none;
+    padding: 5px 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  &__icon {
+    color: #fff;
+  }
+}

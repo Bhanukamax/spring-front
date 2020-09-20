@@ -1,0 +1,57 @@
+@import 'assets/styles/brand';
+
+.dashboard {
+  display: flex;
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+  margin-bottom: var(--footer-height);
+  margin-top: var(--header-height);
+
+  &__content {
+    flex: 1;
+    // margin-left: var(--sidebar-width);
+    padding: 20px;
+    overflow: scroll;
+    animation: expandDashboard 450ms forwards linear;
+  }
+}
+
+.dashboard--sidebar-open {
+  .dashboard__content {
+    // margin-left: var(--sidebar-width);
+    animation: shrinkDashboard 300ms forwards linear;
+  }
+}
+
+@keyframes shrinkDashboard {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: var(--sidebar-width);
+  }
+}
+
+@keyframes expandDashboard {
+  0% {
+    margin-left: var(--sidebar-width);
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@media screen and(max-width: 600px) {
+  .dashboard--sidebar-open {
+    .dashboard__content {
+      animation: none;
+      margin-left: 0;
+    }
+  }
+
+  .dashboard {
+    .dashboard__content {
+      animation: none;
+      margin-left: 0;
+    }
+  }
+}

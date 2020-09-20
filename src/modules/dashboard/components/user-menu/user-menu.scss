@@ -1,0 +1,20 @@
+.user-menu {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  & > * {
+    margin: 5px;
+  }
+
+  &__circle {
+    border: 1px solid #fff;
+    $size: 30px;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+  }
+
+  &__chevron {
+    color: #fff;
+  }
+}

@@ -1,0 +1,29 @@
+@import 'assets/styles/brand';
+
+.mobile-sidebar {
+  position: fixed;
+  background-color: #eceaebee;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  padding-top: 50px;
+  @media screen and(min-width: 600px) {
+    display: none;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 20px;
+    border: none;
+  }
+
+  &__close-icon {
+    font-size: 1.5rem;
+  }
+
+  &--closed {
+    display: none;
+  }
+}

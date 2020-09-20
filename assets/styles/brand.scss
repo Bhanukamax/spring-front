@@ -1,0 +1,29 @@
+@import './fonts';
+@mixin rounded() {
+  border-radius: 5px;
+}
+
+:root {
+  --header-height: 70px;
+  --sidebar-top: 150px;
+  --sidebar-width: 200px;
+  --footer-height: 60px;
+  --mobile-break-point: 600px;
+}
+
+$brand-green: #51a94b;
+$brand-gray: #858f98;
+$brand-ash: #eceaeb;
+$brand-stone: #4a484b;
+$brand-crow: #222;
+
+$brand-blue: #002284;
+$brand-skyblue: #afe0f9;
+$brand-water: #daf1fd;
+
+// $brand-green: #68a554;
+
+// #68a554
+input::placeholder {
+  opacity: 0.4;
+}

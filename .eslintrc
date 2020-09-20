@@ -1,0 +1,13 @@
+{
+    "extends": "react-app",
+    "ignorePatterns": [
+        "build/*",
+        "serviceWorker.js"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error"
+    }
+}
